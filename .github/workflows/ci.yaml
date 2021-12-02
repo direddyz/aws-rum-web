@@ -80,3 +80,6 @@ jobs:
                   npm run integ:local:edge
                   npm run integ:local:firefox
                   npm run integ:local:chrome
+                  
+            - name: Run nightwatch tests
+              run: npm run integ:local:nightwatch:chrome
