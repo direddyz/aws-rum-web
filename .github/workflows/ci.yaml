@@ -82,4 +82,4 @@ jobs:
                   npm run integ:local:chrome
 
             - name: Run nightwatch tests
-              run: npm run integ:local:nightwatch:chrome
+              run: npm run integ:local:nightwatch:firefox
