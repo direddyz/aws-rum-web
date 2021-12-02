@@ -2,9 +2,9 @@ name: AWS RUM Web Client Continuous Build
 
 on:
     push:
-        branches: [main]
+        branches: [dinesh-add-nightwatch]
     pull_request:
-        branches: [main]
+        branches: [dinesh-add-nightwatch]
 
 jobs:
     unit-test:
