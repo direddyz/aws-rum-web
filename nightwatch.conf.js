@@ -105,7 +105,7 @@ module.exports = {
             },
 
             webdriver: {
-                start_process: true,
+                start_process: false,
                 port: 9515,
                 server_path: Services.chromedriver
                     ? Services.chromedriver.path
