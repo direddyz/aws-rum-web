@@ -105,12 +105,13 @@ module.exports = {
             },
 
             webdriver: {
-                start_process: false,
+                start_process: true,
                 port: 9515,
                 server_path: Services.chromedriver
                     ? Services.chromedriver.path
                     : '/usr/local/lib/node_modules/chromedriver/lib/chromedriver/chromedriver',
                 cli_args: [
+                    webdriver.chrome.driver: ""
                     // --verbose
                 ]
             }
