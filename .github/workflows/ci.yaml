@@ -65,7 +65,9 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-node-
 
-            - run: npm install
+            - run: |
+                  npm install
+                  npm install chromedriver@96.0.0
 
             - name: Run Integ Tests on ubuntu-latest
               if: matrix.os == 'ubuntu-latest'
@@ -82,4 +84,4 @@ jobs:
                   npm run integ:local:chrome
 
             - name: Run nightwatch tests
-              run: npm run integ:local:nightwatch:firefox
+              run: npm run integ:local:nightwatch:chrome
